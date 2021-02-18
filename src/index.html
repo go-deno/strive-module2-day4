@@ -1,13 +1,85 @@
 <!DOCTYPE html>
+<!--
+    WELCOME TO THE STRIVE TEAM GENERATOR!
+
+    The app is pretty straight forward, use Bootstrap to add the following features:
+    - The user can add a list of names
+    - The user can set the number of teams
+    - Every time the user clicks on the "assign" button, a random name is placed in a team and removed from the list
+    - Each team should be inside a "column"
+    - [EXTRA] Create a button to remove an user from a team, putting him back in the main list
+    - [EXTRA] Create a button to reset the state of the app
+-->
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
   </head>
-  <body>
-    <h1>Testing</h1>
-    <script src="./index.js"></script>
+  <body class="container">
+    <!-- section: Header -->
+    <section class="header">
+      <h1>Strive Team Generator</h1>
+    </section>
+
+    <!-- section: Forms -->
+    <section class="section-form">
+      <div class="row mb-3">
+        <div class="col-8">
+          <label for="members" class="form-label">Members</label>
+          <input
+            id="inputMembers"
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="members..."
+            aria-label=".form-control-lg example"
+          />
+        </div>
+        <div class="col">
+          <label for="teams" class="form-label">Teams</label>
+          <input
+            id="inputTeams"
+            class="form-control form-control-lg"
+            type="number"
+            placeholder="teams..."
+            aria-label=".form-control-lg example"
+          />
+        </div>
+      </div>
+      <div>
+        <button id="btnAdd" type="button" class="btn btn-lg btn-outline-dark">
+          Add
+        </button>
+        <button
+          id="btnAssign"
+          type="button"
+          class="btn btn-lg btn-outline-dark"
+        >
+          Assign
+        </button>
+      </div>
+    </section>
+
+    <!-- Section: Lists -->
+    <section class="members">
+      <div class="row">
+        <div class="col-2">
+          <div class="staging-list">
+            staging
+            <ul id="staging-list" class="list-group list-group-flush staging">
+              <!-- JS GENERATED LIST -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-10 team-lists">
+          <div>Teams</div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./index.js" type="text/javascript"></script>
   </body>
 </html>
