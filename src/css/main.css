@@ -11329,4 +11329,8 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+section {
+  margin: 3rem 0;
+}
 /*# sourceMappingURL=main.css.map */
