@@ -30,7 +30,7 @@ const addTeamComponent = () => {
   const teams = document.getElementById('teams')
   const teamColumn = document.createElement('div')
   const teamTitle = document.createElement('h5')
-  teamTitle.innerText = `Team ${state.teamsCount + 1}`
+  teamTitle.innerText = `Team ${state.teamsCount}`
   const clone = teamColumn.cloneNode(true)
   clone.setAttribute('id', `Team ${state.teamsCount}`)
   clone.classList = 'col-2 team-column'
