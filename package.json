@@ -2,7 +2,7 @@
   "name": "bootstrap5-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
+  "main": "./src/app.js",
   "scripts": {
     "build": "parcel build ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
